@@ -70,7 +70,7 @@ int main() {
     printf("|%s", m1.c_str());
     for (int i = 0; i < 12 - m1.size(); i++)
         printf(" ");
-    printf("|%2.f", len1);
+    printf("|%.2f", len1);
     for (int i = 0; i < 36 - 4; i++)
         printf(" ");
     printf("|%d", t1);
@@ -88,7 +88,7 @@ int main() {
     printf("|%s", m2.c_str());
     for (int i = 0; i < 12 - m2.size(); i++)
         printf(" ");
-    printf("|%2.f", len2);
+    printf("|%.2f", len2);
     for (int i = 0; i < 36 - 4; i++)
         printf(" ");
     printf("|%d", t2);
@@ -106,7 +106,7 @@ int main() {
     printf("|%s", m3.c_str());
     for (int i = 0; i < 12 - m3.size(); i++)
         printf(" ");
-    printf("|%2.f", len3);
+    printf("|%.2f", len3);
     for (int i = 0; i < 36 - 4; i++)
         printf(" ");
     printf("|%d", t3);
