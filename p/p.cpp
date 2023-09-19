@@ -9,72 +9,72 @@ int main() {
 	SetConsoleCP(1251); // Ввод с консоли в кодировке 1251
 	SetConsoleOutputCP(1251);
 	printf("Русский язык вводиться корректно\n");
-	int wigth = 80;
-    string descr = "оклад установлен по состоянию на 1 января 2000 года";
-	string sur1;
-	string sur2;
-	string sur3;
-	string id1;
-	string id2;
-	string id3;
-	int bd1;
-	int bd2;
-	int bd3;
-	float sl1;
-	float sl2;
-	float sl3;
+	int wigth = 100;
+    string descr = "Примечание:Тр-трамвай, Тс-троллейбус, А-автобус";
+	string vid1;
+	string vid2;
+	string vid3;
+	string m1;
+	string m2;
+	string m3;
+	float len1;
+    float len2;
+	float len3;
+    int t1;
+	int t2;
+	int t3;
 
-	cout << "Enter value of sur1" << endl;
-	cin >> sur1;
-	cout << "Enter value of id1" << endl;
-	cin >> id1;
-	cout << "Enter value of bd1" << endl;
-	cin >> bd1;
-	cout << "Enter value of sl1" << endl;
-	cin >> sl1;
-	cout << "Enter value of sur2" << endl;
-	cin >> sur2;
-	cout << "Enter value of id2" << endl;
-	cin >> id2;
-	cout << "Enter value of bd2" << endl;
-	cin >> bd2;
-	cout << "Enter value of sl2" << endl;
-	cin >> sl2;
-	cout << "Enter value of sur3" << endl;
-	cin >> sur3;
-	cout << "Enter value of id3" << endl;
-	cin >> id3;
-	cout << "Enter value of bd3" << endl;
-	cin >> bd3;
-	cout << "Enter value of sl3" << endl;
-	cin >> sl3;
+	cout << "Вид транспорта:" << endl;
+	cin >> vid1;
+	cout << "Маршрут:" << endl;
+	cin >> m1;
+	cout << "Протяженность маршрута(км):" << endl;
+	cin >> len1;
+	cout << "Время в дороге(мин):" << endl;
+	cin >> t1;
+	cout << "Вид транспорта:" << endl;
+	cin >> vid2;
+	cout << "Маршрут:" << endl;
+	cin >> m2;
+	cout << "Протяженность маршрута(км):" << endl;
+	cin >> len2;
+	cout << "Время в дороге(мин):" << endl;
+	cin >> t2;
+	cout << "Вид транспорта:" << endl;
+	cin >> vid3;
+	cout << "Маршрут:" << endl;
+	cin >> m3;
+	cout << "Протяженность маршрута(км):" << endl;
+	cin >> len3;
+	cout << "Время в дороге(мин):" << endl;
+	cin >> t3;
 	
 	printf("\n");
 	for (int i = 0; i < wigth; i++)
 		printf("-");
 	printf("\n");
-	printf("|Отдел кадров                                                                  |\n");
+	printf("|Ведомость общественного транспорта                                                                |\n");
 	for (int i = 0; i < wigth; i++)
 		printf("-");
 	printf("\n");
 	//                   28                     19              16          16
-	printf("|Фамилия                    |Инициалы          |Год рожд       |Оклад          |");
+	printf("|Вид транспорта    |Маршрут     |Протяженность маршрута(км)        |Время в дороге(мин)            |");
 	printf("\n");
 	for (int i = 0; i < wigth; i++)
 		printf("-");
 	printf("\n");
     //Строка 1
-    printf("|%s", sur1.c_str());
-    for (int i = 0; i < 27 - sur1.size(); i++)
+    printf("|%s", vid1.c_str());
+    for (int i = 0; i < 18 - vid1.size(); i++)
         printf(" ");
-    printf("|%s", id1.c_str());
-    for (int i = 0; i < 18 - id1.size(); i++)
+    printf("|%s", m1.c_str());
+    for (int i = 0; i < 12 - m1.size(); i++)
         printf(" ");
-    printf("|%d", bd1);
-    for (int i = 0; i < 15 - 4; i++)
+    printf("|%2.f", len1);
+    for (int i = 0; i < 36 - 4; i++)
         printf(" ");
-    printf("|%.2f", sl1);
-    for (int i = 0; i < 15 - 6; i++)
+    printf("|%d", t1);
+    for (int i = 0; i < 38 - 6; i++)
         printf(" ");
     printf("|\n");
     for (int i = 0; i < wigth; i++)
@@ -82,17 +82,17 @@ int main() {
     printf("\n");
 
     //Строка 2
-    printf("|%s", sur2.c_str());
-    for (int i = 0; i < 27 - sur2.size(); i++)
+    printf("|%s", vid2.c_str());
+    for (int i = 0; i < 18 - vid2.size(); i++)
         printf(" ");
-    printf("|%s", id2.c_str());
-    for (int i = 0; i < 18 - id2.size(); i++)
+    printf("|%s", m2.c_str());
+    for (int i = 0; i < 12 - m2.size(); i++)
         printf(" ");
-    printf("|%d", bd2);
-    for (int i = 0; i < 15 - 4; i++)
+    printf("|%2.f", len2);
+    for (int i = 0; i < 36 - 4; i++)
         printf(" ");
-    printf("|%.2f", sl2);
-    for (int i = 0; i < 15 - 6; i++)
+    printf("|%d", t2);
+    for (int i = 0; i < 38 - 6; i++)
         printf(" ");
     printf("|\n");
     for (int i = 0; i < wigth; i++)
@@ -100,17 +100,17 @@ int main() {
     printf("\n");
 
     //Строка 3
-    printf("|%s", sur3.c_str());
-    for (int i = 0; i < 27 - sur3.size(); i++)
+    printf("|%s", vid3.c_str());
+    for (int i = 0; i < 18 - vid3.size(); i++)
         printf(" ");
-    printf("|%s", id3.c_str());
-    for (int i = 0; i < 18 - id3.size(); i++)
+    printf("|%s", m3.c_str());
+    for (int i = 0; i < 12 - m3.size(); i++)
         printf(" ");
-    printf("|%d", bd3);
-    for (int i = 0; i < 15 - 4; i++)
+    printf("|%2.f", len3);
+    for (int i = 0; i < 36 - 4; i++)
         printf(" ");
-    printf("|%.2f", sl3);
-    for (int i = 0; i < 15 - 6; i++)
+    printf("|%d", t3);
+    for (int i = 0; i < 38 - 6; i++)
         printf(" ");
     printf("|\n");
     for (int i = 0; i < wigth; i++)
