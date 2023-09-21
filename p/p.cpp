@@ -24,30 +24,23 @@ int main() {
 	int t2;
 	int t3;
 
-	cout << "Вид транспорта:" << endl;
-	cin >> vid1;
-	cout << "Маршрут:" << endl;
-	cin >> m1;
-	cout << "Протяженность маршрута(км):" << endl;
-	cin >> len1;
-	cout << "Время в дороге(мин):" << endl;
-	cin >> t1;
-	cout << "Вид транспорта:" << endl;
-	cin >> vid2;
-	cout << "Маршрут:" << endl;
-	cin >> m2;
-	cout << "Протяженность маршрута(км):" << endl;
-	cin >> len2;
-	cout << "Время в дороге(мин):" << endl;
-	cin >> t2;
-	cout << "Вид транспорта:" << endl;
-	cin >> vid3;
-	cout << "Маршрут:" << endl;
-	cin >> m3;
-	cout << "Протяженность маршрута(км):" << endl;
-	cin >> len3;
-	cout << "Время в дороге(мин):" << endl;
-	cin >> t3;
+   char tmpC1[32];
+   char tmpC2[32];
+    
+    printf("Введите Вид транспорта 3    маршрут3       Протяж маршрута(км) 3      Время в пути(мин)3\n");
+    scanf_s("%s %s %f %u", tmpC1, sizeof(tmpC1), tmpC2, sizeof(tmpC2), &len1, &t1);
+    vid1 = tmpC1;
+    m1 = tmpC2;
+   
+    printf("Введите Вид транспорта 3    маршрут3       Протяж маршрута(км) 3      Время в пути(мин)3\n");
+    scanf_s("%s %s %f %u", tmpC1, sizeof(tmpC1), tmpC2, sizeof(tmpC2), &len2, &t2);
+    vid2 = tmpC1;
+    m2 = tmpC2;
+    
+    printf("Введите Вид транспорта 3    маршрут3       Протяж маршрута(км) 3      Время в пути(мин)3\n");
+    scanf_s("%s %s %f %u", tmpC1, sizeof(tmpC1), tmpC2, sizeof(tmpC2), &len3, &t3);
+    vid3 = tmpC1;
+    m3 = tmpC2;
 	
 	printf("\n");
 	for (int i = 0; i < wigth; i++)
@@ -58,7 +51,7 @@ int main() {
 		printf("-");
 	printf("\n");
 	//                   28                     19              16          16
-	printf("|Вид транспорта    |Маршрут     |Протяженность маршрута(км)        |Время в дороге(мин)            |");
+	printf("|Вид транспорта    |Маршрут     |Протяженность маршрута(км)           |Время в дороге(мин)         |");
 	printf("\n");
 	for (int i = 0; i < wigth; i++)
 		printf("-");
@@ -74,7 +67,7 @@ int main() {
     for (int i = 0; i < 36 - 4; i++)
         printf(" ");
     printf("|%d", t1);
-    for (int i = 0; i < 38 - 6; i++)
+    for (int i = 0; i < 32 - 6; i++)
         printf(" ");
     printf("|\n");
     for (int i = 0; i < wigth; i++)
@@ -92,7 +85,7 @@ int main() {
     for (int i = 0; i < 36 - 4; i++)
         printf(" ");
     printf("|%d", t2);
-    for (int i = 0; i < 38 - 6; i++)
+    for (int i = 0; i < 32 - 6; i++)
         printf(" ");
     printf("|\n");
     for (int i = 0; i < wigth; i++)
@@ -110,7 +103,7 @@ int main() {
     for (int i = 0; i < 36 - 4; i++)
         printf(" ");
     printf("|%d", t3);
-    for (int i = 0; i < 38 - 6; i++)
+    for (int i = 0; i < 32 - 6; i++)
         printf(" ");
     printf("|\n");
     for (int i = 0; i < wigth; i++)
